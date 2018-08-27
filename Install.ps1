@@ -42,7 +42,7 @@ $arguments = @(
     "/L*V"
     "$path\cylance.log"
 )
-#Start-Process "msiexec.exe" -ArgumentList $arguments -Wait -NoNewWindow
+Start-Process "msiexec.exe" -ArgumentList $arguments -Wait -NoNewWindow
 
 Remove-Item $path -Force -Recurse
 exit
